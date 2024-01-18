@@ -14,7 +14,6 @@ struct PokemonCardDetails: Codable{
     let types: [TypeElement]
     let stats: [Stat]
 }
-
 struct PokemonListResponse: Codable {
     let count: Int
     let next: String?
