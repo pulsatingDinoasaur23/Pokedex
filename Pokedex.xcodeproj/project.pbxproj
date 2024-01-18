@@ -104,6 +104,15 @@
 			path = HomeExternalDataManager;
 			sourceTree = "<group>";
 		};
+		40445E4C2B596B9B00D7DF4F /* commons */ = {
+			isa = PBXGroup;
+			children = (
+				40524BD82B588A6F006413D7 /* PokedexApp.swift */,
+				40445E362B58987200D7DF4F /* BaseViewController.swift */,
+			);
+			path = commons;
+			sourceTree = "<group>";
+		};
 		40524BCC2B588A6F006413D7 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +132,7 @@
 		40524BD72B588A6F006413D7 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
-				40524BD82B588A6F006413D7 /* PokedexApp.swift */,
+				40445E4C2B596B9B00D7DF4F /* commons */,
 				40445E2B2B5893D700D7DF4F /* HomeModuleVC */,
 				40445E2C2B58957100D7DF4F /* HomeModuleInteractor */,
 				40445E2E2B5895AA00D7DF4F /* HomeModulePresenter */,
@@ -133,7 +142,6 @@
 				40524BDC2B588A72006413D7 /* Assets.xcassets */,
 				40524BDE2B588A72006413D7 /* Pokedex.entitlements */,
 				40524BDF2B588A72006413D7 /* Preview Content */,
-				40445E362B58987200D7DF4F /* BaseViewController.swift */,
 			);
 			path = Pokedex;
 			sourceTree = "<group>";

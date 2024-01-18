@@ -37,10 +37,11 @@ class MyCustomViewController: BaseViewController {
         let stackHeight = UIScreen.main.bounds.height * 1
 
         pokemonViewFront = UIImageView()
-        pokemonViewFront.contentMode = .scaleAspectFit
+        pokemonViewFront.contentMode = .scaleAspectFill
         pokemonViewFront.translatesAutoresizingMaskIntoConstraints = false
 
         pokemonViewBack = UIImageView()
+        pokemonViewBack.contentMode = .scaleAspectFill
         pokemonViewBack.translatesAutoresizingMaskIntoConstraints = false
         pokemonViewBack.tintColor = UIColor.white
 

@@ -14,6 +14,11 @@ class HomeModulePresenter: HomeModulePresenterProtocol {
     
     func viewDidLoad() {
         interactorInput?.fetchPokemonLists()
+        let timer = Timer.scheduledTimer(timeInterval: 30.0, target: self, selector: #selector(fetchPokemonListsWithTimer), userInfo: nil, repeats: true)
+        RunLoop.current.add(timer, forMode: .common)
+    }
+    @objc func fetchPokemonListsWithTimer() {
+        interactorInput?.fetchPokemonLists()
     }
 }
 extension HomeModulePresenter: HomeModulePresenterInputProtocol {
